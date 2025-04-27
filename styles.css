@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Work Sans', sans-serif;
+    background: #fff8f3;
+    color: #333;
+}
+
+header {
+    background: #ffe5d9;
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+.nav-links {
+    display: flex;
+    gap: 4rem;
+    list-style: none;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+    font-size: 1.2rem;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #ff6b6b;
+}
+
+.logo img {
+    height: 60px;
+    width: auto;
+}
+
+
+.hero {
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    overflow: hidden;
+}
+
+.hero-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.hero-text {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.dropdown-content {
+    display: none;
+    padding: 2rem 1rem;
+    background: #fafafa;
+    text-align: center;
+}
+
+.menu-items {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-top: 1rem;
+}
+
+.menu-item {
+    background: #ffe5d9;
+    padding: 1rem;
+    border-radius: 8px;
+    width: 200px;
+}
+
+.menu-item img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.story {
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+.story-img {
+    width: 300px;
+    margin-top: 1rem;
+    border-radius: 10px;
+}
+
+.info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.info-block {
+    background: #ffe5d9;
+    padding: 1rem;
+    border-radius: 8px;
+    width: 250px;
+}
+
+.shop {
+    padding: 2rem 1rem;
+    background: #fafafa;
+    text-align: center;
+}
+
+footer {
+    background: #ffe5d9;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+@media (max-width: 768px) {
+    .nav-container {
+        flex-direction: column;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 20px;
+        margin-top: 20px;
+    }
+
+    .hero-text h1 {
+        font-size: 2rem;
+    }
+
+    .menu-items {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .info {
+        flex-direction: column;
+        align-items: center;
+    }
+}
